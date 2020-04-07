@@ -1,0 +1,20 @@
+p {
+    color: cyan;
+    font-size: 32px;
+    text-align: center;
+}
+
+.importante {
+    color: darkgreen;
+}
+
+.grande {
+    font-size: 100px;
+}
+
+#titulo2{
+    color: darkred;
+}
+/* body {
+    background-image: url(../images/panda.jpg);
+} */
