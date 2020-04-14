@@ -1,0 +1,18 @@
+table {
+    width: 300px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    border-color: red;
+    border-style: dotted;
+    border-bottom-width: 2px;
+}
+
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
