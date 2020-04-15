@@ -1,0 +1,80 @@
+p {
+    color: #133C16;
+}
+h1{
+    color: #161834;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    padding: 0 50px 0 10px ;
+    width: 100px;
+}
+
+img {
+    width: 100px;
+}
+
+.texto-resaltado {
+    font-weight: bold;
+    font-size: 60px;
+}
+/* Esto es un comentario, esta es la clase resaltado */ 
+.resaltado {
+    color: #36112F;
+}
+
+body {
+    background-color: #868899;
+    margin: 0px;
+}
+
+.primero {
+    border: 5px solid blue;
+    width: 500px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.segundo {
+    border: 5px solid blue;
+    width: 300px;
+    padding: 15px;
+    margin: 15px ;
+}
+
+.contenedor {
+    display: flex;
+    border: 5px solid black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.centro {
+    width: 20%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonera {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+.boton {
+    margin: 0 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: blue;
+}
