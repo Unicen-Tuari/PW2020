@@ -13,7 +13,7 @@ function about($member = null){
         <body>';
 
         if(isset($member)){
-            $html .= '<h1>About ' . $member .  '</h1>
+            $html .= '<h1>About ' . $member[0] .  '</h1>
             <img src="images/juan.jpg" alt="">';
 
         }else{
