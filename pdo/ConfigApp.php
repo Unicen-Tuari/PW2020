@@ -6,7 +6,8 @@ class ConfigApp{
     public static $ACTIONS = [
         'home' => 'tasks',
         'insertTask' => 'insertTask',
-        'deleteTask' => 'deleteTask'
+        'deleteTask' => 'deleteTask',
+        'done' => 'completeTask'
     ];
 }
 ?>

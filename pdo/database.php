@@ -18,4 +18,10 @@ function removeTask($id_task){
     $sentence = $db->prepare("DELETE FROM task WHERE id_task=?");
     $sentence->execute(array($id_task));
 }
+
+function markTaskAsDone($id_task){
+    $db = new PDO('mysql:host=localhost;dbname=todolistapp;charset=utf8', 'root', '');
+    $sentence = $db->prepare("UPDATE task SET done=1 WHERE id_task=?");
+    $sentence->execute(array($id_task));
+}
 ?>

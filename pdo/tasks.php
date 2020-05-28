@@ -32,9 +32,17 @@ function tasks($member = null){
                     <a href="deleteTask/<? echo $task['id_task']?>">
                       <i data-feather="trash-2"></i>
                     </a>
+                    <a href="done/<? echo $task['id_task']?>">
+                      <i data-feather="check-square"></i>
+                    </a>
                   </p>
                   <footer class="blockquote-footer"><? echo $task['description']?></footer>
                   </blockquote>
+                  <? if($task['done']){?>
+                    <div class="badge badge-primary text-wrap" style="width: 6rem;">
+                      Completed
+                    </div>
+                  <?}?>
                 </li>
               <?php
               }
@@ -86,4 +94,10 @@ function deleteTask($params){
   removeTask($params[0]);
   header("Location: ../home");
 }
+
+function completeTask($params){
+  markTaskAsDone($params[0]);
+  header("Location: ../home");
+}
+
 ?>
