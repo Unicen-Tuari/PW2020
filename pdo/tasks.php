@@ -29,7 +29,7 @@ function tasks($member = null){
                   <blockquote class="blockquote">
                   <p class="mb-0">
                     <a href="show/<? echo $task['id_task']?>"><? echo $task['title']?></a>
-                    <a href="deleteTask/<? echo $task['id_task']?>">
+                    <a href="delete/<? echo $task['id_task']?>">
                       <i data-feather="trash-2"></i>
                     </a>
                     <a href="done/<? echo $task['id_task']?>">
@@ -51,7 +51,7 @@ function tasks($member = null){
           </div>
           <div class="col-sm">
             <h1>Create Task</h1>
-            <form action="insertTask"  method="GET">
+            <form action="insert"  method="GET">
               <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Task title">
