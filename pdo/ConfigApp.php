@@ -7,7 +7,8 @@ class ConfigApp{
         'home' => 'tasks',
         'insertTask' => 'insertTask',
         'deleteTask' => 'deleteTask',
-        'done' => 'completeTask'
+        'done' => 'completeTask',
+        'show' => 'showTask',
     ];
 }
 ?>

@@ -24,4 +24,11 @@ function markTaskAsDone($id_task){
     $sentence = $db->prepare("UPDATE task SET done=1 WHERE id_task=?");
     $sentence->execute(array($id_task));
 }
+
+function getTask($id_task){
+    $db = new PDO('mysql:host=localhost;dbname=todolistapp;charset=utf8', 'root', '');
+    $sentence = $db->prepare( "select * from task where id_task=?");
+    $sentence->execute(array($id_task));
+    return $sentence->fetch();
+}
 ?>
