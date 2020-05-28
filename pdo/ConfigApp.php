@@ -5,7 +5,8 @@ class ConfigApp{
     public static $PARAMS = "params";
     public static $ACTIONS = [
         'home' => 'tasks',
-        'insertTask' => 'insertTask'
+        'insertTask' => 'insertTask',
+        'deleteTask' => 'deleteTask'
     ];
 }
 ?>

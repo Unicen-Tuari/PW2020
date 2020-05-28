@@ -12,4 +12,10 @@ function createTask($title, $description){
     $sentence = $db->prepare("INSERT INTO task(title,description) VALUES(?,?)");
     $sentence->execute(array($title, $description));
 }
+
+function removeTask($id_task){
+    $db = new PDO('mysql:host=localhost;dbname=todolistapp;charset=utf8', 'root', '');
+    $sentence = $db->prepare("DELETE FROM task WHERE id_task=?");
+    $sentence->execute(array($id_task));
+}
 ?>
